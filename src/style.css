@@ -1,0 +1,9 @@
+h1 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  background: linear-gradient(#3C3DBF, #E4E5FF);
+  color: #3C3DBF;
+  -webkit-text-fill-color: text;
+  background-color: transparent;
+}
