@@ -37,9 +37,7 @@ h3 {
 }
 
 .icon-wrapper {
-  display: ;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
   padding: 1px;
   gap: 1px;
