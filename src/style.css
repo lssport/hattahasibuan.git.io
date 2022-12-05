@@ -21,6 +21,19 @@ h2 {
   box-shadow: 0px 6px 30px rgba(206, 206, 206, 0.25);
   border-radius: 14px;
 }
+.icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 35px;
+  height: 35px;
+  background: #E4E5FF;
+  border-radius: 6px;
+  color: #3C3DBF;
+}
 .title-sm {
   font-weight: 400;
   font-size: 12px;
