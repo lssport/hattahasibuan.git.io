@@ -5,8 +5,10 @@ h1 {
   font-weight: 600;
   font-size: 32px;
   line-height: 48px;
-  background: linear-gradient(#A1A1A1) #E4E5FF);
-  color: #3C3DBF;
+  background: linear-gradient (267,81deg, #3C3DBF 1,92% #2998FF ¹06, 64%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: #3C3DBF;
   -webkit-text-fill-color: text;
-  text-fill-color: transparent;
+
 }
