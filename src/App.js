@@ -16,7 +16,7 @@ class App extends React.Component {
       <h2 className='fw-bold'>Rp.1.500.000,-</h2>
       <span className='title-md'>sisa uang kamu tersisa 75% lagi</span>
       <div className='row'>
-      <div className='col-6'>
+      <div className='col-6 d-flex justify-content-between align-items-center'>
       <div className='card-wrapper p-4'>
        <div className='icon-wrapper mb-1'><i class="bi bi-wallet2"></i>
 <span className='title-sm'>pemasukan</span>
