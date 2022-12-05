@@ -28,6 +28,24 @@ h3 {
   color: #454545;
 }
 
+h4 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+h5 {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+h6 {
+  font-weight: 400 !important;
+  font-size: 14px;
+  line-height: 16px;
+}
+
 .card-wrapper {
   background: #FFFFFF;
   border: 1px solid #F4F4F4;
@@ -58,6 +76,29 @@ h3 {
   line-height: 12px !important;
   color: #A1A1A1;
 }
+
 .text-ungu {
   color: #3C3DBF;
+}
+
+.button {
+  border: none;
+  border-radius: 8px;
+  color: #F4F4F4;
+}
+
+.btn-ungu {
+  background: #3C3DBF;
+}
+
+.btn-pink {
+  background: #FF3666;
+}
+
+.text-money-In {
+  font-weight: 600 !important;
+}
+
+.text-money-out {
+  font-weight: 600 !important;
 }
