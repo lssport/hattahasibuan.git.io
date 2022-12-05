@@ -18,12 +18,15 @@ class App extends React.Component {
       <span className='title-md'>sisa uang kamu tersisa 75% lagi</span>
       </div>
       </div>
+
       <div className='row'>
       <div className='col-6'>
       <div className='card-wrapper p-4'>
-       <div className='icon-wrapper mb-1'><i class="bi bi-wallet2"></i>
+       <div className='icon-wrapper mb-1'>
+         <i class="bi bi-wallet2"></i>
 <span className='title-sm'>pemasukan</span>
-<h3 className='fw-bold'>Rp.2000.000,-</h3><span className='title-sm text-ungu fw-bold'>50</span>
+<h3 className='fw-bold'>Rp.2000.000,-</h3>
+<span className='title-sm text-ungu fw-bold'>50</span>
 <span className='title-sm'>transaksi</span>
 
  <div className='col-6'>
