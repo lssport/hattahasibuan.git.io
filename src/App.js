@@ -18,7 +18,7 @@ class App extends React.Component {
       <span className='title-md'>sisa uang kamu tersisa 75% lagi</span>
       </div>
       </div>
-      <div className='row'>
+      <div className='row mt-4'>
       <div className='col-6'>
       <div className='card-wrapper p-4'>
        <div className='icon-wrapper mb-1'>
@@ -65,7 +65,7 @@ class App extends React.Component {
       </div>
       </div>
       <h5 className='text-money-In'>Rp.1.000.000,-</h5>
-      <div className='transaction ms-3 d-flex flex-column'>
+      <div className='transaction ms-2 d-flex flex-column'>
         <h6>Beli Kopi</h6>
         <span className='title-sm'>2 july 2022</span>
         <h5 className='text-money-Out'>Rp.20.000,-</h5>

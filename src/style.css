@@ -97,8 +97,10 @@ h6 {
 
 .text-money-In {
   font-weight: 600 !important;
+  color: #3C3DBF;
 }
 
 .text-money-out {
   font-weight: 600 !important;
+  color: #FF3666;
 }
