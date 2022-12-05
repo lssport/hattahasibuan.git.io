@@ -28,7 +28,8 @@ class App extends React.Component {
     <div className='icon-wrapper mb-1'>
       <i class="bi bi-cash-stack"></i>
 <span  className='title-sm'>pengeluaran</span>
-<h3 className='fw-bold'>Rp.500.000,-</h3><span className='title-sm text-ungu fw-bold'>50</span><span className='title-sm'>transaksi</span>
+<h3 className='fw-bold'>Rp.500.000,-</h3><span className='title-sm text-ungu fw-bold'>50</span>
+<span className='title-sm'>transaksi</span>
 </div></div></div></div>
 </div></div></div>
 </div></div></div></div>
