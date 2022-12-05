@@ -59,7 +59,18 @@ class App extends React.Component {
             </div>
             </div>
             </div>
-            </div>  
+    <div className='transaction ms-3 d-flex flex-column'>
+      <h6>Menerima Gaji</h6>
+      <span className='title-sm'>1 july 2022</span>
+      </div>
+      </div>
+      <h5 className='text-money-In'>Rp.1.000.000,-</h5>
+      <div className='transaction ms-3 d-flex flex-column'>
+        <h6>Beli Kopi</h6>
+        <span className='title-sm'>2 july 2022</span>
+        <h5 className='text-money-Out'>Rp.20.000,-</h5>
+        </div>
+        
 </>
   );
 }
