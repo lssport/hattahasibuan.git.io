@@ -11,7 +11,7 @@ class App extends React.Component {
     <div className='container py-5'>
       <div className='row'>
         <div className='col-12 text-center'>
-      <h1 className='fw-bold'>FEEDUITEUN APPS</h1>
+      <h1 className='fw-bold'>FEEDUITEN APPS</h1>
       <hr className='w-75 mx-auto'/>
       <h2 className='fw-bold'>Rp.1.500.000,-</h2>
       <span className='title-md'>sisa uang kamu tersisa 75% lagi</span>

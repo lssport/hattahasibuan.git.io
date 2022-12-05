@@ -8,15 +8,14 @@ h1 {
   font-weight: 600;
   font-size: 32px;
   line-height: 48px;
-  background: linear-gradient (267,81deg, #3C3DBF 1,92% #2998FF ¹06, 64%);
+  color: #3C3DBF #2998FF; 
   -webkit-background-clip: text;
   background-clip: text;
-  -webkit-text-fill-color: #3C3DBF;
 }
 
 h2 {
   font-size: 32px;
-  line-height: 45px;
+  line-height: 48px;
   color: #454545;
 }
 
@@ -24,7 +23,7 @@ h3 {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 2px !important;
+  line-height: 24px !important;
   color: #454545;
 }
 
@@ -33,17 +32,19 @@ h3 {
   border: 1px solid #F4F4F4;
   box-shadow: 0px 5px 30px rgba(206, 206, 206, 0.25);
   border-radius: 14px;
+  height: 100px;
+  width: 200px;
 }
 
 .icon-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: ;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  gap: 10px;
-  width: 35px;
-  height: 35px;
+  padding: 2px;
+  line-height: 30px;
+  width: 25px;
+  height: 25px;
   background: #E4E5FF;
   border-radius: 6px;
   color: #3C3DBF;
@@ -52,6 +53,13 @@ h3 {
 .title-sm {
   font-weight: 400;
   font-size: 12px;
+  line-height: 12px !important;
+  color: #A1A1A1;
+}
+
+.title-md {
+  font-weight: 400;
+  font-size: 14px;
   line-height: 12px !important;
   color: #A1A1A1;
 }
