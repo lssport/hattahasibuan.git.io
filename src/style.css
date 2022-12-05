@@ -8,8 +8,9 @@ h1 {
   font-weight: 600;
   font-size: 32px;
   line-height: 48px;
-  color: #3C3DBF #2998FF; 
+  background: linear-gradient(267,81deg, #3C3DBF 1,92%, #2998FF 106,64%);
   -webkit-background-clip: text;
+  -webkit-text-fill-color: #3C3DBF;
   background-clip: text;
 }
 
@@ -37,12 +38,8 @@ h3 {
 }
 
 .icon-wrapper {
-  flex-direction: column;
-  align-items: center;
-  padding: 1px;
-  gap: 1px;
-  width: 25px;
-  height: 20px;
+  width: 16px;
+  height: 18px;
   background: #E4E5FF;
   border-radius: 6px;
   color: #3C3DBF;
@@ -60,4 +57,8 @@ h3 {
   font-size: 14px;
   line-height: 12px !important;
   color: #A1A1A1;
+}
+.text-ungu {
+  padding: 1px;
+  color: #3C3DBF;
 }
