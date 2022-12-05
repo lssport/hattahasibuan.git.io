@@ -37,12 +37,12 @@ h3 {
 }
 
 .icon-wrapper {
-  display: flexbox;
+  display: ;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   padding: 1px;
-  gap: 10px;
+  gap: 1px;
   width: 25px;
   height: 20px;
   background: #E4E5FF;
