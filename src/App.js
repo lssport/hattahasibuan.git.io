@@ -22,7 +22,6 @@ class App extends React.Component {
 <span className='title-sm'>pemasukan</span>
 <h3 className='fw-bold'>Rp.2000.000,-</h3><span className='title-sm text-ungu fw-bold'>50</span>
 <span className='title-sm'>transaksi</span>
-<div className='row'>
  <div className='col-6'>
   <div className='card-wrapper p-4'>
     <div className='icon-wrapper mb-1'>
@@ -32,7 +31,7 @@ class App extends React.Component {
 <span className='title-sm'>transaksi</span>
 </div></div></div></div>
 </div></div></div>
-</div></div></div></div>
+</div></div></div>
 
 
   );
