@@ -19,8 +19,14 @@ h3 {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-  line-height: 1px !important;
+  line-height: 2px !important;
   color: #454545;
+}
+.card-wrapper {
+  background: #FFFFFF;
+  border: 1px solid #F4F4F4;
+  box-shadow: 0px 5px 30px rgba(206, 206, 206, 0.25);
+  border-radius: 14px;
 }
 .card-wrapper {
   background: #FFFFFF;
@@ -31,10 +37,10 @@ h3 {
 .icon-wrapper {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+
   align-items: center;
   padding: 10px;
-  gap: 7px;
+  gap: 10px;
   width: 35px;
   height: 35px;
   background: #E4E5FF;
