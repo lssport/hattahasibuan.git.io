@@ -40,25 +40,36 @@ this.state = {
       <span className='title-md'>sisa uang kamu tersisa 75% lagi</span>
       </div>
       </div>
+
       <div className='row mt-4'>
       <div className='col-6'>
       <div className='card-wrapper p-4'>
        <div className='icon-wrapper mb-1'>
-         <i class="bi bi-wallet2"></i></div>
+         <i class="bi bi-wallet2"></i>
+         </div>
 <span className='title-sm'>pemasukan</span>
-<h3 className='fw-bold'>Rp.{this.statet.pengeluaranUang},-</h3>
+<h3 className='fw-bold'>Rp. {this.statet.pengeluaranUang} ,-</h3>
+<div>
 <span className='title-sm text-ungu fw-bold'>50</span>
 <span className='title-sm'> transaksi</span>
-</div></div>
+</div>
+</div>
+</div>
+
+</div>
  <div className='col-6'>
   <div className='card-wrapper p-4'>
     <div className='icon-wrapper mb-1'>
-      <i class="bi bi-cash-stack"></i></div>
+      <i class="bi bi-cash-stack"></i>
+      </div>
 <span  className='title-sm'>pengeluaran</span>
-<h3 className='fw-bold'>Rp.500.000,-</h3><span className='title-sm text-ungu fw-bold'>50</span>
-<span className='title-sm'> transaksi</span>
+<h3 className='fw-bold'>Rp.500.000,-</h3>
+<div>
+<span className='title-sm text-ungu fw-bold'>50</span><span className='title-sm'> transaksi</span>
 </div>
 </div>
+</div>
+
 </div>
 <div className='row mt-5'>
   <div className='col-12 d-flex justify-content-between align-items-center'>
@@ -69,9 +80,10 @@ this.state = {
       </div>
       </div>
       </div>
+
       <div className='row mt-4'>
-        {this.state.summary.map {() => {
-          return (
+        {this.state.summary.map{sum() => {
+          return {
         <div className='col-12 d-flex justify-content-between align-items-center'>
       <div className='d-flex align-items-text'>
         <div className={sum.category === 'IN' ?  'icon-wrapper-IN : icon-wrapper-OUT'}>
@@ -84,8 +96,9 @@ this.state = {
       </div>
       </div>
       
-      <h5 className='text-money-In'>Rp. {sum.nominal},-</h5></div>
-    
+      <h5 className='text-money-In'>Rp. {sum.nominal} ,-</h5></div>
+          }
+        }} }
     
       </div>
       </div>     
