@@ -32,8 +32,6 @@ this.state = {
   return (
     <>
     <div className='container py-5'>
-      {this.state.summary.map { () => }
-      return (
       <div className='row'>
         <div className='col-12 text-center'>
       <h1 className='fw-bold'>FEEDUITEN APPS</h1>
@@ -72,19 +70,26 @@ this.state = {
       </div>
       </div>
       <div className='row mt-4'>
+        {this.state.summary.map {() => {
+          return (
         <div className='col-12 d-flex justify-content-between align-items-center'>
       <div className='d-flex align-items-text'>
-        <div className='icon-wrapper'>
-          <i class="bi bi-wallet2"></i>
+        <div className={sum.category === 'IN' ?  'icon-wrapper-IN : icon-wrapper-OUT'}>
+          <i class={sum.category === 'IN' ? "bi bi-wallet2" : "bi bi-bag-dash"}></i>
             </div>
     <div className='transaction ms-3 d-flex flex-column'>
       <h6>{sum.deskripsi}</h6>
       <span className='title-sm'>{sum.tanggal}</span>
+      
       </div>
       </div>
-      <h5 className='text-money-In'>Rp. {sum.nominal},-</h5></div></div></div>     
-      ) 
+      
+      <h5 className='text-money-In'>Rp. {sum.nominal},-</h5></div>
     
+    
+      </div>
+      </div>     
+
 </>
   );
 }
