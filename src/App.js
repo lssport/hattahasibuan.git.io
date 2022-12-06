@@ -59,14 +59,18 @@ class App extends React.Component {
       <span className='title-sm'>1 july 2022</span>
       </div>
       </div>
-      <h5 className='text-money-In'>Rp.1.000.000,-</h5>
+      <h5 className='text-money-In'>Rp.1.000.000,-</h5></div>
+      <div className='col-12 d-flex justify-content-between align-items-center'>
+      <div className='d-flex align-items-text'>
+      <div className='icon-wrapper'>
+        <i class="bi bi-wallet2"></i></div>
       <div className='transaction ms-2 d-flex flex-column'>
         <h6>Beli Kopi</h6>
-        <span className='title-sm'>2 july 2022</span></div>
+        <span className='title-sm'>2 july 2022</span></div></div>
         <h5 className='text-money-Out'>Rp.20.000,-</h5>
-        </div>
-        </div>
-        </div>
+        </div></div></div>
+    
+        
         
 </>
   );
