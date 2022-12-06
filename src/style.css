@@ -52,13 +52,17 @@ h6 {
   border: 1px solid #F4F4F4;
   box-shadow: 0px 5px 30px rgba(206, 206, 206, 0.25);
   border-radius: 14px;
-  height: 120px;
-  width: 170px;
 }
 
 .icon-wrapper {
-  width: 16px;
-  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 35px;
+  height: 35px;
   background: #E4E5FF;
   border-radius: 6px;
   color: #3C3DBF;
