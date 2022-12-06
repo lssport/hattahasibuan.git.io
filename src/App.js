@@ -9,7 +9,7 @@ this.state = {
   sisaUang: 0,
   persentaseUang: 0,
   pemasukanUang: 0,
-  pengeuaranUang: 0,
+  pengeluaranUang: 0,
   transaksiIN: 0,
   transaksiOUT: 0,
   summary: [
@@ -86,7 +86,7 @@ this.state = {
           return {
         <div className='col-12 d-flex justify-content-between align-items-center'>
       <div className='d-flex align-items-text'>
-        <div className={sum.category === 'IN' ?  'icon-wrapper-IN : icon-wrapper-OUT'}>
+        <div className={sum.category === 'IN' ?  'icon-wrapper-IN': 'icon-wrapper-OUT'}>
           <i class={sum.category === 'IN' ? "bi bi-wallet2" : "bi bi-bag-dash"}></i>
             </div>
     <div className='transaction ms-3 d-flex flex-column'>
@@ -96,10 +96,11 @@ this.state = {
       </div>
       </div>
       
-      <h5 className='text-money-In'>Rp. {sum.nominal} ,-</h5></div>
+      <h5 className='text-money-In'>Rp. {sum.nominal} ,-</h5>
+      </div>
           }
-        }} }
-    
+        } }
+      }
       </div>
       </div>     
 
