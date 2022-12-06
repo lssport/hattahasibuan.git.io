@@ -48,7 +48,7 @@ this.state = {
 <span className='title-sm'>pemasukan</span>
 <h3 className='fw-bold'>Rp.2000.000,-</h3>
 <span className='title-sm text-ungu fw-bold'>50</span>
-<span className='title-sm'>transaksi</span>
+<span className='title-sm'> transaksi</span>
 </div></div>
  <div className='col-6'>
   <div className='card-wrapper p-4'>
@@ -56,7 +56,7 @@ this.state = {
       <i class="bi bi-cash-stack"></i></div>
 <span  className='title-sm'>pengeluaran</span>
 <h3 className='fw-bold'>Rp.500.000,-</h3><span className='title-sm text-ungu fw-bold'>50</span>
-<span className='title-sm'>transaksi</span>
+<span className='title-sm'> transaksi</span>
 </div>
 </div>
 </div>
