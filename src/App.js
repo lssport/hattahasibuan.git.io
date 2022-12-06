@@ -4,8 +4,30 @@ import "./style.css";
 class App extends React.Component {
   constructor() {
     super();
-  }
 
+this.state = {
+  sisaUang: 0,
+  persentaseUang: 0,
+  pemasukanUang: 0,
+  pengeuaranUang: 0,
+  transaksiIN: 0,
+  transaksiOUT: 0,
+  summary: [
+    {
+      deskripsi:'menerima gaji', 
+      tanggal:'1 July 2022', 
+      nominal:'1000000', 
+      category:'IN'
+    }, 
+    {
+      deskripsie:'beli kopi', 
+      tanggal:'2 July 2022', 
+      nominalo:'20000', 
+      category:'OUT'
+    }
+  ]
+}
+}
   render() {
   return (
     <>
