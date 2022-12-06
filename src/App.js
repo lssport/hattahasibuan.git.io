@@ -32,11 +32,13 @@ this.state = {
   return (
     <>
     <div className='container py-5'>
+      {this.state.summary.map { () => }
+      return (
       <div className='row'>
         <div className='col-12 text-center'>
       <h1 className='fw-bold'>FEEDUITEN APPS</h1>
       <hr className='w-75 mx-auto'/>
-      <h2 className='fw-bold'>Rp.1.500.000,-</h2>
+      <h2 className='fw-bold'>Rp. {this.state.sisaUang},-</h2>
       <span className='title-md'>sisa uang kamu tersisa 75% lagi</span>
       </div>
       </div>
@@ -46,7 +48,7 @@ this.state = {
        <div className='icon-wrapper mb-1'>
          <i class="bi bi-wallet2"></i></div>
 <span className='title-sm'>pemasukan</span>
-<h3 className='fw-bold'>Rp.2000.000,-</h3>
+<h3 className='fw-bold'>Rp.{this.statet.pengeluaranUang},-</h3>
 <span className='title-sm text-ungu fw-bold'>50</span>
 <span className='title-sm'> transaksi</span>
 </div></div>
@@ -76,23 +78,13 @@ this.state = {
           <i class="bi bi-wallet2"></i>
             </div>
     <div className='transaction ms-3 d-flex flex-column'>
-      <h6>Menerima Gaji</h6>
-      <span className='title-sm'>1 july 2022</span>
+      <h6>{sum.deskripsi}</h6>
+      <span className='title-sm'>{sum.tanggal}</span>
       </div>
       </div>
-      <h5 className='text-money-In'>Rp.1.000.000,-</h5></div>
-      <div className='col-12 d-flex justify-content-between align-items-center'>
-      <div className='d-flex align-items-text'>
-      <div className='icon-wrapper'>
-        <i class="bi bi-wallet2"></i></div>
-      <div className='transaction ms-2 d-flex flex-column'>
-        <h6>Beli Kopi</h6>
-        <span className='title-sm'>2 july 2022</span></div></div>
-        <h5 className='text-money-Out'>Rp.20.000,-</h5>
-        </div></div></div>
+      <h5 className='text-money-In'>Rp. {sum.nominal},-</h5></div></div></div>     
+      ) 
     
-        
-        
 </>
   );
 }
