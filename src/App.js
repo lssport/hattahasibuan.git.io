@@ -12,7 +12,7 @@ this.state = {
   pengeluaranUang: 0,
   transaksiIN: 0,
   transaksiOUT: 0,
-  summary: [
+  sumary: [
     {
       deskripsi:'menerima gaji', 
       tanggal:'1 July 2022', 
@@ -63,7 +63,7 @@ this.state = {
       <i class="bi bi-cash-stack"></i>
       </div>
 <span  className='title-sm'>pengeluaran</span>
-<h3 className='fw-bold'>Rp.500.000,-</h3>
+<h3 className='fw-bold'>Rp. {this.state.pengeluaranUang} ,-</h3>
 <div>
 <span className='title-sm text-ungu fw-bold'>50</span><span className='title-sm'> transaksi</span>
 </div>
@@ -82,7 +82,7 @@ this.state = {
       </div>
 
       <div className='row mt-4'>
-        {this.state.summary.map{sum() => {
+        {this.state.sumary.map{(sum) => {
           return {
         <div className='col-12 d-flex justify-content-between align-items-center'>
       <div className='d-flex align-items-text'>
@@ -99,8 +99,7 @@ this.state = {
       <h5 className='text-money-In'>Rp. {sum.nominal} ,-</h5>
       </div>
           }
-        } }
-      }
+}} }
       </div>
       </div>     
 
