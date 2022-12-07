@@ -12,7 +12,7 @@ this.state = {
   pengeluaranUang: 0,
   transaksiIN: 0,
   transaksiOUT: 0,
-  sumary: [
+  summary: [
     {
       deskripsi:'menerima gaji', 
       tanggal:'1 July 2022', 
@@ -82,7 +82,7 @@ this.state = {
       </div>
 
       <div className='row mt-4'>
-        {this.state.sumary.map{(sum) => {
+        {this.state.summary.map{(sum) => {
           return {
         <div className='col-12 d-flex justify-content-between align-items-center'>
       <div className='d-flex align-items-text'>
