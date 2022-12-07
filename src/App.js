@@ -16,13 +16,13 @@ this.state = {
     {
       deskripsi:'menerima gaji', 
       tanggal:'1 July 2022', 
-      nominal:'1000000', 
+      nominal:1000000, 
       category:'IN'
     }, 
     {
       deskripsie:'beli kopi', 
       tanggal:'2 July 2022', 
-      nominalo:'20000', 
+      nominalo:20000, 
       category:'OUT'
     }
   ]
