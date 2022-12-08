@@ -65,7 +65,7 @@ this.state = {
 
 <span className='title-sm text-ungu fw-bold'>50</span><span className='title-sm'> transaksi</span>
 </div>
-</div>
+</div
 <div className='row mt-5'>
   <div className='col-12 d-flex justify-content-between align-items-center'>
     <h4>Ringkasan Transaksi</h4>
@@ -78,7 +78,7 @@ this.state = {
 
       <div className='row mt-4'>
         {this.state.summary.map{(sum) => {
-          return {
+          return (
         <div className='col-12 d-flex justify-content-between align-items-center'>
       <div className='d-flex align-items-text'>
         <div className={sum.category === 'IN' ?  'icon-wrapper-IN': 'icon-wrapper-OUT'}>
@@ -90,14 +90,13 @@ this.state = {
       
       </div>
       </div>
-      
+      </div>
       <h5 className='text-money-In'>Rp. {sum.nominal} ,-</h5>
-      </div>
-          }
+          )   
 }} }
+      
       </div>
-      </div>     
-
+      </div>
 </>
   )
 }
