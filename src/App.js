@@ -49,13 +49,11 @@ this.state = {
          </div>
 <span className='title-sm'>pemasukan</span>
 <h3 className='fw-bold'>Rp. {this.statet.pengeluaranUang} ,-</h3>
-<div>
 <span className='title-sm text-ungu fw-bold'>50</span>
 <span className='title-sm'> transaksi</span>
 </div>
 </div>
 </div>
-
 </div>
  <div className='col-6'>
   <div className='card-wrapper p-4'>
@@ -64,12 +62,9 @@ this.state = {
       </div>
 <span  className='title-sm'>pengeluaran</span>
 <h3 className='fw-bold'>Rp. {this.state.pengeluaranUang} ,-</h3>
-<div>
+
 <span className='title-sm text-ungu fw-bold'>50</span><span className='title-sm'> transaksi</span>
 </div>
-</div>
-</div>
-
 </div>
 <div className='row mt-5'>
   <div className='col-12 d-flex justify-content-between align-items-center'>
@@ -104,7 +99,7 @@ this.state = {
       </div>     
 
 </>
-  );
+  )
 }
 }
 export default App;
