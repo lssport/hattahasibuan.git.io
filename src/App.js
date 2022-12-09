@@ -7,7 +7,7 @@ class App extends React.Component {
 
 this.state = {
   sisaUang: 0,
-  persentaseUang: 0,
+  persentaseUang: 0, 
   pemasukanUang: 0,
   pengeluaranUang: 0,
   transaksiIN: 0,
@@ -37,10 +37,9 @@ this.state = {
       <h1 className='fw-bold'>FEEDUITEN APPS</h1>
       <hr className='w-75 mx-auto'/>
       <h2 className='fw-bold'>Rp.{this.state.sisaUang},-</h2>
-      <span className='title-md'>sisa uang kamu tersisa 75% lagi</span>
+      <span className='title-md'>sisa uang kamu tersisa {this.state.persentaseUang} lagi</span>
       </div>
-      </div>
-
+</div>
       <div className='row mt-4'></div>
       <div className='col-6'>
       <div className='card-wrapper p-4'>
@@ -85,7 +84,7 @@ this.state = {
       <h6>{sum.deskripsi}</h6>
       <span className='title-sm'>{sum.tanggal}</span>
       </div>
-      </div>
+  </div>
       <h5 className={sum.category === 'IN' ?'text-money-In' : 'text-money-Out'}>Rp.{sum.nominal},-</h5>
       </div>
           )   
