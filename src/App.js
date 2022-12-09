@@ -20,7 +20,7 @@ this.state = {
       category:'IN'
     }, 
     {
-      deskripsie:'beli kopi', 
+      deskripsi:'beli kopi', 
       tanggal:'2 July 2022', 
       nominal:20000, 
       category:'OUT'
@@ -40,7 +40,7 @@ this.state = {
       <span className='title-md'>sisa uang kamu tersisa {this.state.persentaseUang} lagi</span>
       </div>
 </div>
-      <div className='row mt-4'></div>
+      <div className='row mt-4'>
       <div className='col-6'>
       <div className='card-wrapper p-4'>
        <div className='icon-wrapper mb-1'>
@@ -48,10 +48,13 @@ this.state = {
          </div>
 <span className='title-sm'>pemasukan</span>
 <h3 className='fw-bold'>Rp.{this.state.pemasukanUang},-</h3>
+<div>
 <span className='title-sm text-ungu fw-bold'>50</span>
 <span className='title-sm'> transaksi</span>
 </div>
 </div>
+</div>
+
  <div className='col-6'>
   <div className='card-wrapper p-4'>
     <div className='icon-wrapper mb-1'>
@@ -59,9 +62,14 @@ this.state = {
       </div>
 <span  className='title-sm'>pengeluaran</span>
 <h3 className='fw-bold'>Rp.{this.state.pengeluaranUang},-</h3>
+<div>
 <span className='title-sm text-ungu fw-bold'>50</span><span className='title-sm'> transaksi</span>
 </div>
 </div>
+</div>
+
+</div>
+
 <div className='row mt-5'>
   <div className='col-12 d-flex justify-content-between align-items-center'>
     <h4>Ringkasan Transaksi</h4>
@@ -76,7 +84,7 @@ this.state = {
           return (
         <div className='col-12 d-flex justify-content-between align-items-center'>
       <div className='d-flex align-items-center'>
-        <div className={sum.category === 'IN' ?  'icon-wrapper-IN': 'icon-wrapper-OUT'}>
+        <div className={sum.category === 'IN' ?  'icon-wrapper-in' : 'icon-wrapper-out'}>
           <i class={sum.category === 'IN' ? "bi bi-wallet2" : "bi bi-bag-dash"}></i>
             </div>
     <div className='transaction ms-3 d-flex flex-column'>
