@@ -41,7 +41,7 @@ this.state = {
       </div>
       </div>
 
-      <div className='row mt-4'>
+      <div className='row mt-4'></div>
       <div className='col-6'>
       <div className='card-wrapper p-4'>
        <div className='icon-wrapper mb-1'>
@@ -53,8 +53,7 @@ this.state = {
 <span className='title-sm'> transaksi</span>
 </div>
 </div>
-</div>
-</div>
+
  <div className='col-6'>
   <div className='card-wrapper p-4'>
     <div className='icon-wrapper mb-1'>
@@ -91,6 +90,7 @@ this.state = {
       </div>
           )   
 }) }
+      </div>
       </div>
       
 </>
