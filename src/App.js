@@ -43,7 +43,7 @@ this.state = {
       <div className='row mt-4'>
       <div className='col-6'>
       <div className='card-wrapper p-4'>
-       <div className='icon-wrapper mb-1'>
+       <div className='icon-wrapper-in mb-1'>
          <i class="bi bi-wallet2"></i>
          </div>
 <span className='title-sm'>pemasukan</span>
@@ -57,7 +57,7 @@ this.state = {
 
  <div className='col-6'>
   <div className='card-wrapper p-4'>
-    <div className='icon-wrapper mb-1'>
+    <div className='icon-wrapper-out mb-1'>
       <i class="bi bi-cash-stack"></i>
       </div>
 <span  className='title-sm'>pengeluaran</span>
