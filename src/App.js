@@ -37,7 +37,7 @@ this.state = {
       <h1 className='fw-bold'>FEEDUITEN APPS</h1>
       <hr className='w-75 mx-auto'/>
       <h2 className='fw-bold'>Rp.{this.state.sisaUang},-</h2>
-      <span className='title-md'>sisa uang kamu tersisa {this.state.persentaseUang} lagi</span>
+      <span className='title-md'>sisa uang kamu tersisa {this.state.persentaseUang}% lagi</span>
       </div>
 </div>
       <div className='row mt-4'>
@@ -82,7 +82,7 @@ this.state = {
       <div className='row mt-4'>
         {this.state.summary.map((sum) => {
           return (
-        <div className='col-12 d-flex justify-content-between align-items-center'>
+        <div className='mb-3 col-12 d-flex justify-content-between align-items-center'>
       <div className='d-flex align-items-center'>
         <div className={sum.category === 'IN' ?  'icon-wrapper-in' : 'icon-wrapper-out'}>
           <i class={sum.category === 'IN' ? "bi bi-wallet2" : "bi bi-bag-dash"}></i>
