@@ -22,7 +22,7 @@ this.state = {
     {
       deskripsie:'beli kopi', 
       tanggal:'2 July 2022', 
-      nominalo:20000, 
+      nominal:20000, 
       category:'OUT'
     }
   ]
@@ -48,13 +48,13 @@ this.state = {
          <i class="bi bi-wallet2"></i>
          </div>
 <span className='title-sm'>pemasukan</span>
-<h3 className='fw-bold'>Rp.,-</h3>
+<h3 className='fw-bold'>Rp.{this.state.pemasukanUang},-</h3>
 <span className='title-sm text-ungu fw-bold'>50</span>
 <span className='title-sm'> transaksi</span>
 </div>
 </div>
 </div>
-
+</div>
  <div className='col-6'>
   <div className='card-wrapper p-4'>
     <div className='icon-wrapper mb-1'>
@@ -63,7 +63,6 @@ this.state = {
 <span  className='title-sm'>pengeluaran</span>
 <h3 className='fw-bold'>Rp.{this.state.pengeluaranUang},-</h3>
 <span className='title-sm text-ungu fw-bold'>50</span><span className='title-sm'> transaksi</span>
-</div>
 </div>
 </div>
 <div className='row mt-5'>
