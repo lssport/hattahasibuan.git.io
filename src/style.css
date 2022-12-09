@@ -1,7 +1,6 @@
-
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.1/font/bootstrap-icons.css");
 @import url('htps://fonts.googleapis.com/css2?family=poppins.wght@400;600;700&display=swap');
-{
+* {
   font-family: 'Poppins', sans-serif;
 }
 h1 {
@@ -13,13 +12,11 @@ h1 {
   -webkit-text-fill-color: #3C3DBF;
   background-clip: text;
 }
-
 h2 {
   font-size: 32px;
   line-height: 48px;
   color: #454545;
 }
-
 h3 {
   font-style: normal;
   font-weight: 600;
@@ -27,34 +24,29 @@ h3 {
   line-height: 24px !important;
   color: #454545;
 }
-
 h4 {
   font-weight: 500;
   font-size: 20px;
   line-height: 30px;
 }
-
 h5 {
   font-weight: 600;
   font-size: 14px;
   line-height: 21px;
 }
-
 h6 {
   font-weight: 400 !important;
   font-size: 14px;
   line-height: 16px;
   color: #454545;
 }
-
 .card-wrapper {
   background: #FFFFFF;
   border: 1px solid #F4F4F4;
   box-shadow: 0px 6px 30px rgba(206, 206, 206, 0.25);
   border-radius: 14px;
 }
-
-.icon-wrapper {
+.icon-wrapper-in {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -67,44 +59,49 @@ h6 {
   border-radius: 6px;
   color: #3C3DBF;
 }
-
+.icon-wrapper-out {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 10px;
+  width: 35px;
+  height: 35px;
+  background: #E4E5FF;
+  border-radius: 6px;
+  color: #3C3DBF;
+}
 .title-sm {
   font-weight: 400;
   font-size: 12px;
   line-height: 12px !important;
   color: #A1A1A1;
 }
-
 .title-md {
   font-weight: 400;
   font-size: 14px;
   line-height: 12px !important;
   color: #A1A1A1;
 }
-
 .text-ungu {
   color: #3C3DBF;
 }
-
 .button {
   border: none;
   border-radius: 8px;
   color: #FFF;
 }
-
 .btn-ungu {
   background: #3C3DBF;
 }
-
 .btn-pink {
   background: #FF3666;
 }
-
 .text-money-In {
   font-weight: 600 !important;
   color: #3C3DBF;
 }
-
 .text-money-Out {
   font-weight: 600 !important;
   color: #FF3666;
