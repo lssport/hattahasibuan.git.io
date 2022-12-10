@@ -45,7 +45,7 @@ this.state = {
       <div className='col-6'>
       <div className='card-wrapper p-4'>
        <div className='icon-wrapper-in mb-1'>
-         <i class="bi bi-wallet2"></i>
+         <i className="bi bi-wallet2"></i>
          </div>
 <span className='title-sm'>pemasukan</span>
 <h3 className='fw-bold'>Rp.{this.state.pemasukanUang},-</h3>
@@ -59,7 +59,7 @@ this.state = {
  <div className='col-6'>
   <div className='card-wrapper p-4'>
     <div className='icon-wrapper-out mb-1'>
-      <i class="bi bi-cash-stack"></i>
+      <i className="bi bi-cash-stack"></i>
       </div>
 <span  className='title-sm'>pengeluaran</span>
 <h3 className='fw-bold'>Rp.{this.state.pengeluaranUang},-</h3>
@@ -75,9 +75,8 @@ this.state = {
   <div className='col-12 d-flex justify-content-between align-items-center'>
     <h4>Ringkasan Transaksi</h4>
     <div className='wrapper-button'>
-      <ModalCreate/>
-      <button className='button btn-ungu px-3 py-2 me-2'>Pemasukan<i class="bi bi-plus-circle-fill"></i></button>
-      <button className='button btn-pink px-3 py-2'>Pengeluaran<i class="bi bi-dash-circle-fill"></i></button>
+      <ModalCreate variant="button btn-ungu px-3 py-2 me-2" text="Pemasukan" icon="bi bi-plus-circle-fill"/>
+      <ModalCreate variant="button btn-pink px-3 py-2" text="Pengeluaran" icon="bi bi-dash-circle-fill"/>
       </div>
       </div>
       </div>
@@ -87,7 +86,7 @@ this.state = {
         <div key='(index)' className='mb-3 col-12 d-flex justify-content-between align-items-center'>
       <div className='d-flex align-items-center'>
         <div className={sum.category === 'IN' ?  'icon-wrapper-in' : 'icon-wrapper-out'}>
-          <i class={sum.category === 'IN' ? "bi bi-wallet2" : "bi bi-bag-dash"}></i>
+          <i className={sum.category === 'IN' ? "bi bi-wallet2" : "bi bi-bag-dash"}></i>
             </div>
     <div className='transaction ms-3 d-flex flex-column'>
       <h6>{sum.deskripsi}</h6>
@@ -128,13 +127,10 @@ class Modalcreate extends React.Component {
     render () {
       return (
     <>
-      <Button variant="primary" onClick={handleShow}>
-        Launch demo modal
-      </Button>
-
-      <Modal show={show} onHide={this.handleClose}>
+      <button onClick={this.handleShow} className={this.props.variant}>{this.props.text}<i className={this.props.icon}</i></button>
+       <Modal show={this.state.show} onHide={this.handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>Modal heading</Modal.Title>
+          <Modal.Title>Tambah Pemasukan</Modal.Title>
         </Modal.Header>
         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
         <Modal.Footer>
