@@ -127,7 +127,7 @@ class Modalcreate extends React.Component {
     render () {
       return (
     <>
-      <button onClick={this.handleShow} className={this.props.variant}>{this.props.text}<i className={this.props.icon}</i></button>
+      <button onClick={this.handleShow} className={this.props.variant}>{this.props.text}<i className={this.props.icon}></i></button>
        <Modal show={this.state.show} onHide={this.handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Tambah Pemasukan</Modal.Title>
