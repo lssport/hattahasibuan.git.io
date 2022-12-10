@@ -103,7 +103,7 @@ this.state = {
   )
 }
 }
-class Modalcreate extends React.Component {
+class ModalCreate extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -114,7 +114,7 @@ class Modalcreate extends React.Component {
   }
   handleClose () {
     this.setstate ({
-      show : fals
+      show : false
     })
   }
 
