@@ -102,6 +102,14 @@ this.state = {
   )
 }
 }
+class Modalcreate extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      handleClose
+    }
+  }
+}
 function Example() {
   const [show, setShow] = useState(false);
 
