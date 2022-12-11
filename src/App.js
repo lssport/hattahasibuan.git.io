@@ -75,7 +75,6 @@ this.state = {
   <div className='col-12 d-flex justify-content-between align-items-center'>
     <h4>Ringkasan Transaksi</h4>
     <div className='wrapper-button'>
-      <ModalCreate />
      <button className='button btn-ungu px-3 py-2 me-2'>Pemasukan<i className="bi bi-plus-circle-fill"></i></button>
      <button className='button btn-pink px-3 py-2'>Pengeluaran<i className="bi bi-dash-circle-fill"></i></button>
       </div>
@@ -116,19 +115,19 @@ class ModalCreate extends React.Component {
   handleClose () {
     this.setstate ({
       show : false
-    })
+    }) 
   }
 
   handleShow () {
     this.setstate ({
       show : true
-    })
+    }) 
   }
 
     render () {
       return (
     <>
-        <Button variant="primary" onClick={handleShow}>
+        <Button variant="primary" onClick={this.handleShow}>
         Launch demo modal
       </Button>
        <Modal show={this.state.show} onHide={this.handleClose}>
