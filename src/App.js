@@ -75,8 +75,9 @@ this.state = {
   <div className='col-12 d-flex justify-content-between align-items-center'>
     <h4>Ringkasan Transaksi</h4>
     <div className='wrapper-button'>
-      <ModalCreate variant="button btn-ungu px-3 py-2 me-2" text="Pemasukan" icon="bi bi-plus-circle-fill" modalheading="tambahkan pemasukan"/>
-      <ModalCreate variant="button btn-pink px-3 py-2" text="Pengeluaran" icon="bi bi-dash-circle-fill" modalheading="tambahkan pengeluaran"/>
+      <ModalCreate />
+     <button className='button btn-ungu px-3 py-2 me-2'>Pemasukan<i className="bi bi-plus-circle-fill"></i></button>
+     <button className='button btn-pink px-3 py-2'>Pengeluaran<i className="bi bi-dash-circle-fill"></i></button>
       </div>
       </div>
       </div>
@@ -127,10 +128,10 @@ class ModalCreate extends React.Component {
     render () {
       return (
     <>
-      <button onClick={this.handleShow} className={this.props.variant}>{this.props.text}<i className={this.props.icon}></i></button>
+  
        <Modal show={this.state.show} onHide={this.handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{this.props.modalheading}</Modal.Title>
+          <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
         <Modal.Footer>
