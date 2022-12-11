@@ -83,7 +83,7 @@ this.state = {
       <div className='row mt-4'>
         {this.state.summary.map((sum, index) => {
           return (
-        <div key='index' className='mb-3 col-12 d-flex justify-content-between align-items-center'>
+        <div key='(index)' className='mb-3 col-12 d-flex justify-content-between align-items-center'>
       <div className='d-flex align-items-center'>
         <div className={sum.category === 'IN' ?  'icon-wrapper-in' : 'icon-wrapper-out'}>
           <i className={sum.category === 'IN' ? "bi bi-wallet2" : "bi bi-bag-dash"}></i>
@@ -130,7 +130,7 @@ class ModalCreate extends React.Component {
       <button onClick={this.handleShow} className={this.props.variant}>{this.props.text}<i className={this.props.icon}></i></button>
        <Modal show={this.state.show} onHide={this.handleClose}>
         <Modal.Header closeButton>
-          <Modal.Title>{this.state.modalheading}</Modal.Title>
+          <Modal.Title>{this.props.modalheading}</Modal.Title>
         </Modal.Header>
         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
         <Modal.Footer>
