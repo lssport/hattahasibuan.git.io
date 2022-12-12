@@ -141,7 +141,7 @@ class ModalCreate extends React.Component {
             Close
           </Button>
           <Button variant="primary" onClick={this.handleClose}>
-            Save change
+            Save changes
           </Button>
         </Modal.Footer>
       </Modal>
