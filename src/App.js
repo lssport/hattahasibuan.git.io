@@ -126,26 +126,28 @@ class ModalCreate extends React.Component {
 
     render () {
       return (
+
     <>
-        <Button variant="primary" onClick={this.handleShow}>
+      <Button variant="primary" onClick={handleShow}>
         Launch demo modal
       </Button>
-       <Modal show={this.state.show} onHide={this.handleClose}>
+
+      <Modal show={show} onHide={handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={this.handleClose}>
+          <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={this.handleClose}>
-            Save changes
+          <Button variant="primary" onClick={handleClose}>
+            Save Changes
           </Button>
         </Modal.Footer>
       </Modal>
     </>
-  )
+  );
 }
-}
+        
 export default App;
