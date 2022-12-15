@@ -132,7 +132,7 @@ class ModalCreate extends React.Component {
         Launch demo modal
       </Button>
 
-      <Modal show={show} onHide={this.handleClose}>
+      <Modal show={this.state.show} onHide={this.handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
