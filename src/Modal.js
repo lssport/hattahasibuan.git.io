@@ -1,3 +1,6 @@
+import react from 'react-dom';
+import React, { Component } from 'react';
+
 class ModalCreate extends React.Component {
   constructor() {
     super();
