@@ -1,7 +1,8 @@
 import React from "react";
 import "./style.css";
 import Button from "react-bootstrap/Button";
-import Modal from "react-bootstrap/Modal";
+import ModalCreate from "./Component/ModalCreate";
+
 class App extends React.Component {
   constructor() {
     super();
