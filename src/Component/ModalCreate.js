@@ -1,5 +1,5 @@
-import react from "react";
-import Modal from " react-bootstrap/Modal";
+import React from "react";
+import Modal from "react-bootstrap/Modal";
 
 class ModalCreate extends React.Component {
   constructor() {
@@ -22,7 +22,6 @@ class ModalCreate extends React.Component {
 
     render () {
       return (
-   
 <>
       <Button variant="primary" onClick={this.handleShow}>
         Launch demo modal
