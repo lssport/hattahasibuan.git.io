@@ -1,10 +1,10 @@
 import React from "react";
 import "./style.css";
-
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 class App extends React.Component {
   constructor() {
     super();
-
 this.state = {
   sisaUang: 0,
   persentaseUang: 0, 
@@ -54,7 +54,6 @@ this.state = {
 </div>
 </div>
 </div>
-
  <div className='col-6'>
   <div className='card-wrapper p-4'>
     <div className='icon-wrapper-out mb-1'>
@@ -74,6 +73,7 @@ this.state = {
   <div className='col-12 d-flex justify-content-between align-items-center'>
     <h4>Ringkasan Transaksi</h4>
     <div className='wrapper-button'>
+    <ModalCreate />
      <button className='button btn-ungu px-3 py-2 me-2'>Pemasukan<i className="bi bi-plus-circle-fill"></i></button>
      <button className='button btn-pink px-3 py-2'>Pengeluaran<i className="bi bi-dash-circle-fill"></i></button>
       </div>
@@ -82,7 +82,7 @@ this.state = {
       <div className='row mt-4'>
         {this.state.summary.map((sum, index) => {
           return (
-        <div key='(index)' className='mb-3 col-12 d-flex justify-content-between align-items-center'>
+        <div key={index} className='mb-3 col-12 d-flex justify-content-between align-items-center'>
       <div className='d-flex align-items-center'>
         <div className={sum.category === 'IN' ?  'icon-wrapper-in' : 'icon-wrapper-out'}>
           <i className={sum.category === 'IN' ? "bi bi-wallet2" : "bi bi-bag-dash"}></i>
@@ -109,8 +109,6 @@ class ModalCreate extends React.Component {
     this.state = {
       show : false
     }
-    this.handleClose = this.handleClose.bind(this);
-    this.handleShow = this.handleShow.bind(this);
   }
   handleClose () {
     this.setstate ({
@@ -128,26 +126,26 @@ class ModalCreate extends React.Component {
       return (
    
 <>
-      <Button variant="primary" onClick={handleShow}>
+      <Button variant="primary" onClick={this.handleShow}>
         Launch demo modal
       </Button>
 
-      <Modal show={show} onHide={handleClose}>
+      <Modal show={this.state.show} onHide={this.handleClose}>
         <Modal.Header closeButton>
           <Modal.Title>Modal heading</Modal.Title>
         </Modal.Header>
         <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
         <Modal.Footer>
-          <Button variant="secondary" onClick={handleClose}>
+          <Button variant="secondary" onClick={this.handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={this.handleClose}>
             Save Changes
           </Button>
         </Modal.Footer>
       </Modal>
     </>
-  );
+  )
 }
 
 export default App;
