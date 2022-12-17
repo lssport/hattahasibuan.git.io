@@ -1,7 +1,8 @@
-import react from 'react-dom';
-import React, { Component } from 'react';
+import React, { useState } from 'react-dom';
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
-class ModalCreate extends React.Component {
+class Modal extends React.Component {
   constructor() {
     super();
     this.state = {
@@ -48,4 +49,4 @@ class ModalCreate extends React.Component {
   )
 }
 }
-export default ModalCreate;
+export default Modal;
