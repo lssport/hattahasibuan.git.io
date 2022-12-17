@@ -1,3 +1,6 @@
+import react from "react";
+import Modal from " react-bootstrap/Modal";
+
 class ModalCreate extends React.Component {
   constructor() {
     super();
