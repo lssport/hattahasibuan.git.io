@@ -1,5 +1,7 @@
 import React, { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
+import React, {useState } from 'react';
+import React, { Component } from 'react';
 import "./style.css";
 import App from './App';
 import Modal from './Modal';
