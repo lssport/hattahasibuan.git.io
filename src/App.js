@@ -34,7 +34,7 @@ this.state = {
     <div className='container py-5'>
       <div className='row'>
         <div className='col-12 text-center'>
-      <h1 className='fw-bold'>FEEDUITEN APPS</h1>
+      <h1 className='fw-bold'>QHODHO SHOLAT</h1>
       <hr className='w-75 mx-auto'/>
       <h2 className='fw-bold'>Rp.{this.state.sisaUang},-</h2>
       <span className='title-md'>sisa uang kamu tersisa {this.state.persentaseUang}% lagi</span>
@@ -46,7 +46,7 @@ this.state = {
        <div className='icon-wrapper-in mb-1'>
          <i className="bi bi-wallet2"></i>
          </div>
-<span className='title-sm'>pemasukan</span>
+<span className='title-sm'>BAYAR</span>
 <h3 className='fw-bold'>Rp.{this.state.pemasukanUang},-</h3>
 <div>
 <span className='title-sm text-ungu fw-bold'>50</span>
@@ -59,7 +59,7 @@ this.state = {
     <div className='icon-wrapper-out mb-1'>
       <i className="bi bi-cash-stack"></i>
       </div>
-<span  className='title-sm'>pengeluaran</span>
+<span  className='title-sm'>HUTANG</span>
 <h3 className='fw-bold'>Rp.{this.state.pengeluaranUang},-</h3>
 <div>
 <span className='title-sm text-ungu fw-bold'>50</span><span className='title-sm'> transaksi</span>
